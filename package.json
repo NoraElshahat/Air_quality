@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "jest"
+
   },
   "keywords": [],
   "author": "",
@@ -21,9 +23,14 @@
   "devDependencies": {
     "@types/axios": "^0.9.36",
     "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
     "@types/mongoose": "^5.11.96",
     "@types/node": "^24.2.0",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.0.5",
     "nodemon": "^3.1.10",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
