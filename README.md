@@ -38,9 +38,12 @@ npm install
 ```
 
 ### 2. Configure Environment Variables
+```
+
 PORT="YOUR PORT"
 API_KEY= "YOUR IQAIR API KEY"
 MONGO_URI="YOUR MONGO URI"
+```
 
 ### 3. Run the Application  
 npm run dev
@@ -49,11 +52,15 @@ npm run dev
 ## API Routes Documentation
 
 ### 1. Get Air Quality by GPS Coordinates
+```
 **GET** /api/air-quality/:lat/:lon
+
 - **Parameters:**
   - `lat` (required): Latitude of the GPS coordinate (e.g., 48.856614).
   - `lon` (required): Longitude of the GPS coordinate (e.g., 2.352222).
+ 
 - **example** : /api/air-quality/48.856614/2.352222
+
 - **Response** : 
 {
   "Result": {
@@ -66,8 +73,9 @@ npm run dev
     }
   }
 }
+```
 
-
+```
 ### 2. Get Air Quality Of Paris
 **GET** /api/paris/most-polluted
 **Example** : /api/paris/most-polluted
@@ -75,7 +83,7 @@ npm run dev
 {
     "parisMostPollutedTime": "2025-08-05T11:26:01.760Z"
 }
-
+```
 
 CRON JOB : 
 A scheduled task is implemented using node-cron:
