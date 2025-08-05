@@ -109,6 +109,7 @@ Project Structure:
 │   ├── cronJobs
 │   └── middlewares
 │   ├── utils
+│   ├── tests
 ├── .env.example
 ├── README.md
 └── tsconfig.json
